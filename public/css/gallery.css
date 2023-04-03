@@ -1,0 +1,83 @@
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 30vh;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* extra css */
+
+.gallery {
+position: relative;
+
+}
+
+/* Make the image responsive */
+
+.gallery .btn {
+position: absolute;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+left: 258px;
+top: 9px;
+color: #16df8bf5;
+background-color: #3a2205;
+font-weight: bold;
+width: 20px;
+border-radius: 4rem;
+font-size: 16px;
+padding: 1px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.gallery .btn:hover {
+background-color: black;
+color: aqua;
+
+}
+
